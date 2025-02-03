@@ -50,7 +50,7 @@ registry.register("order-service", "http://localhost:8080");
 String serviceUrl = registry.lookup("order-service");
 System.out.println("Order Service URL: " + serviceUrl);
 ```
-🎥 *Check out an animated demo of how microservices automatically discover and connect with each other in real-time.*
+ 
 
 ---
 
@@ -62,8 +62,7 @@ Ensure smooth asynchronous communication with Kafka:
 MessageQueue queue = new KafkaMessageQueue("orders-topic");
 queue.publish("New order received: #12345");
 ```
-🎥 *Watch an animation showing Kafka message queueing and processing in action.*
-
+ 
 ---
 
 ### 🛠️ **Distributed Tracing**
@@ -75,8 +74,7 @@ Tracer tracer = OpenTelemetry.getTracer("microservice-comm-lib");
 Span span = tracer.spanBuilder("process-order").startSpan();
 span.end();
 ```
-🎥 *Experience how distributed tracing visualizes each service interaction and request flow across your microservices.*
-
+ 
 ---
 
 ## ⚙️ **Configuration**
